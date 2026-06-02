@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta property="og:title" content="h"> -->
+  <meta property="og:description" content="h">
+  <!-- <meta property="og:site_name" content="h"> -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .title-part {
+      display: flex;
+      font-size: 3.687090rem;
+      background: var(--linear-gradient);
+      color: var(--color);
+      align-items: center;
+      justify-content: center;
+      height: var(--height);
+      border-radius: 10px;
+      text-align: center;
+      padding: 1rem 2rem;
+
+      --linear-gradient: linear-gradient(180deg, var(--color-2), var(--background));
+      --background: black;
+      --color: white;
+      --color-2: #aa0000;
+      --height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-part">h</div>
+</body>
+</html>
