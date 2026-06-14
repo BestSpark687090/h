@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-  <script type="text/javascript"><![CDATA[
-    const div = document.getElementById("blowup")
-    for (let i=0;i<20000;i++){
-      const i = document.createElement("iframe");
-      div.appendChild(i);
-    }
-  ]]></script>
-  <foreignObject>
+  
+  <foreignObject width="400" height="400">
     <div id="blowup" xmlns="http://www.w3.org/1999/xhtml">
     </div>
   </foreignObject>
+  <script type="text/javascript"><![CDATA[
+    const div = document.getElementById("blowup")
+    for (let i=0;i<20000;i++){
+      const f = document.createElement("iframe");
+      div.appendChild(f);
+    }
+  ]]></script>
 </svg>
